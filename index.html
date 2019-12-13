@@ -62,7 +62,7 @@
         echo "<h3>Datamu Tersimpan!</h3>";
     } else if (isset($_POST['load_data'])) {
         try {
-            $sql_select = "SELECT * FROM Registration";
+            $sql_select = "SELECT * FROM INPUTBARANG";
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
