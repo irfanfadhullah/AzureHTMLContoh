@@ -16,7 +16,19 @@
  	p {text-align: center}
     .form{align-items: left; display: flex; flex-direction: column;}
     td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
-     
+    #submit-btn {
+    background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 1px 8px #24c64f;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 42.3px;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: 0.25s;
+    width: 153px;}
  </style>
  </head>
  <body>
@@ -28,8 +40,8 @@
        Letak Barang<input type="text" name="letak" id="letak"/></br></br>
        Nama Pemilik <input type="text" name="pemilik" id="pemilik"/></br></br>
        Tanggal Peletakkan <input type="text" name="tanggal" id="tanggal"/></br></br>
-       <input type="submit" name="submit" value="Submit" />
-       <input type="submit" name="load_data" value="Load Data" />
+       <input id="submit-btn" type="submit" name="submit" value="Submit" />
+       <input id="submit-btn" type="submit" name="load_data" value="Load Data" />
 
  </form>
  <?php
