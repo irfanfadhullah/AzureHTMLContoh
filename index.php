@@ -17,7 +17,7 @@
     form{align-items: center; display: flex; flex-direction: column;}
     td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
     #submit-btn {
-    background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+    background: -webkit-linear-gradient(right, #a6f77b, rgb(173, 216, 230 ));
     border: none;
     border-radius: 21px;
     box-shadow: 0px 1px 8px #24c64f;
