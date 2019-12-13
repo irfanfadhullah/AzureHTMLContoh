@@ -15,6 +15,10 @@
  	th { font-size: 1.2em; text-align: left; border: none; padding-left: 0; }
  	p {text-align: center}
     form{text-align:center}
+    .form-border {
+    background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+    height: 1px;
+    width: 100%;}
     td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
      
  </style>
@@ -30,6 +34,7 @@
        Tanggal Peletakkan <input type="text" name="tanggal" id="tanggal"/></br></br>
        <input type="submit" name="submit" value="Submit" />
        <input type="submit" name="load_data" value="Load Data" />
+       <div class="form-border"></div>
  </form>
  <?php
    $host = "irfanappserver.database.windows.net";
