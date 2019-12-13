@@ -76,7 +76,7 @@
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }
-        echo "<h3>Datamu Tersimpan!</h3>";
+        echo "<h3>Datamu Tersimpan!</h3>"
     } else if (isset($_POST['load_data'])) {
         try {
             $sql_select = "SELECT * FROM INPUTBARANG";
