@@ -34,7 +34,7 @@
  <body>
  <h1>Masukan Disini</h1>
  <p>Isikan Nama Barang dan Keterangan yang bisa diberikan, lalu tekan <strong>Submit</strong> untuk menginputkan</p>
- <form method="post" action="index.php" enctype="multipart/form-data" >
+ <form method="post" action="index.html" enctype="multipart/form-data" >
        Nama Barang  <input type="text" name="namabarang" id="namabarang"/></br></br>
        Jenis <input type="text" name="jenis" id="jenis"/></br></br>
        Letak Barang<input type="text" name="letak" id="letak"/></br></br>
