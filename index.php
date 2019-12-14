@@ -65,12 +65,12 @@
 
             // Insert data
             $sql_insert = "Masukan Untuk Pengingat (namabarang, jenis, letak, pemilik, tanggal) 
-                        VALUES (?,?,?,?)";
+                        VALUES (?,?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $namabarang);
             $stmt->bindValue(2, $jenis);
             $stmt->bindValue(3, $letak);
-            $stmt->bindValue(4, $pemilik;
+            $stmt->bindValue(4, $pemilik);
             $stmt->bindValue(5, $tanggal);
             $stmt->execute();
         } catch(Exception $e) {
