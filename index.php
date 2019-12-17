@@ -47,29 +47,7 @@
  </form>
 
 <?php
-    if (isset($_POST['submit'])) {
-        try {
-            $namabarang = $_POST['namabarang'];
-            $jenis = $_POST['jenis'];
-            $letak = $_POST['letak'];
-            $pemilik = $_POST['pemilik'];
-            $tanggal = date("Y-m-d");
-
-            // Insert data
-            $sql_insert = "Masukan Untuk Pengingat (namabarang, jenis, letak, pemilik, tanggal) 
-                        VALUES (?,?,?,?,?)";
-            $stmt = $conn->prepare($sql_insert);
-            $stmt->bindValue(1, $namabarang);
-            $stmt->bindValue(2, $jenis);
-            $stmt->bindValue(3, $letak);
-            $stmt->bindValue(4, $pemilik);
-            $stmt->bindValue(5, $tanggal);
-            $stmt->execute();
-        } catch(Exception $e) {
-            echo "Failed: " . $e;
-        }
-        echo "<h3>Datamu Tersimpan!</h3>"
-    } else if (isset($_POST['load_data'])) {
+    if (isset($_POST['load_data'])) {
         try {
             $sql_select = "SELECT * FROM INPUTBARANG";
             $stmt = $conn->query($sql_select);
@@ -112,4 +90,28 @@
         echo "Failed: " . $e;
     }
 ?> 
+<?php
+if (isset($_POST['submit'])) {
+    try {
+        $namabarang = $_POST['namabarang'];
+        $jenis = $_POST['jenis'];
+        $letak = $_POST['letak'];
+        $pemilik = $_POST['pemilik'];
+        $tanggal = date("Y-m-d");
 
+        // Insert data
+        $sql_insert = "Masukan Untuk Pengingat (namabarang, jenis, letak, pemilik, tanggal) 
+                    VALUES (?,?,?,?,?)";
+        $stmt = $conn->prepare($sql_insert);
+        $stmt->bindValue(1, $namabarang);
+        $stmt->bindValue(2, $jenis);
+        $stmt->bindValue(3, $letak);
+        $stmt->bindValue(4, $pemilik);
+        $stmt->bindValue(5, $tanggal);
+        $stmt->execute();
+    } catch(Exception $e) {
+        echo "Failed: " . $e;
+    }
+    echo "<h3>Datamu Tersimpan!</h3>"
+}
+?>
