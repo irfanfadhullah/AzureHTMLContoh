@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
  <head>
  <Title>Pendaftaran Pengingat Barang</Title>
@@ -44,6 +45,8 @@
        <input id="submit-btn" type="submit" name="load_data" value="Load Data" />
 
  </form>
+ </body>
+</html>
  <?php
    $host = "irfanappserver.database.windows.net";
    $user = "appserver";
@@ -106,6 +109,5 @@
         }
     }
  ?>
- </body>
- </html>
+
 
