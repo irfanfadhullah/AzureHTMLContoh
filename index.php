@@ -45,19 +45,8 @@
        <input id="submit-btn" type="submit" name="load_data" value="Load Data" />
 
  </form>
- </body>
-</html>
- <?php
-   $host = "irfanappserver.database.windows.net";
-   $user = "appserver";
-   $pass = "@Irfan123456";
-   $db = "irfandb";
-    try {
-        $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
-        $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    } catch(Exception $e) {
-        echo "Failed: " . $e;
-    }
+
+<?php
     if (isset($_POST['submit'])) {
         try {
             $namabarang = $_POST['namabarang'];
@@ -109,5 +98,18 @@
         }
     }
  ?>
-
+ </body>
+</html>
+ <?php
+   $host = "irfanappserver.database.windows.net";
+   $user = "appserver";
+   $pass = "@Irfan123456";
+   $db = "irfandb";
+    try {
+        $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
+        $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    } catch(Exception $e) {
+        echo "Failed: " . $e;
+    }
+?> 
 
